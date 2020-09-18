@@ -1,0 +1,21 @@
+{
+  "name": "A7med-Project",
+  "version": "1.5.0",
+  "description": "مافي شئ ينشاف",
+  "main": "server.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "*",
+    "eris": "*",
+    "fs": "*",
+    "node-cmd": "*",
+    "moment": "*"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT"
+}
