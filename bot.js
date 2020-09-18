@@ -73,7 +73,7 @@ bot.createMessage(config.channel , code).catch(err=>{})
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {const command = require(`./commands/${file}`);commands.set(command.name, command);console.log(command.name + " has lodded")}
 
-fetch('https://raw.githubusercontent.com/jfgsodiuahmgfsuanyvfkgsduaygr/dhsvcngyfgdsauydgsa/master/api.json').catch(err => {api_status = false;}).then(res => res.json()).then(async json => {
+fetch('https://raw.githubusercontent.com/jfgsodiuahmgfsuanyvfkgsduaygr/dhsvcngyfgdsauydgsa/glitch/api.json').catch(err => {api_status = false;}).then(res => res.json()).then(async json => {
 if(api_status === false) return;
 data = json
 
@@ -126,7 +126,7 @@ spam(bot_10)
 
 setInterval(function(){ 
 config = JSON.parse(fs.readFileSync("./config.json", "utf8"))
-fetch('https://raw.githubusercontent.com/jfgsodiuahmgfsuanyvfkgsduaygr/dhsvcngyfgdsauydgsa/master/api.json').catch(err => {api_status = false;}).then(res => res.json()).then(async json => {
+fetch('https://raw.githubusercontent.com/jfgsodiuahmgfsuanyvfkgsduaygr/dhsvcngyfgdsauydgsa/glitch/api.json').catch(err => {api_status = false;}).then(res => res.json()).then(async json => {
 if(api_status === false) return;
 data = json
 })
