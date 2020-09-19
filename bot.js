@@ -29,19 +29,6 @@ if(message.author.id == bot.user.id) return;
 let args = message.content.slice(Math.floor(prefix.length + prefix_num.length)).trim().split(/ +/);
 let args1 = message.content.slice(Math.floor(prefix.length + prefix_num.length)).trim().split(/ +/);
 let commandName = args.shift().toLowerCase();
-if(message.content.split(" ")[0].toLowerCase() == prefix + "sc") {
-commandName = "sc"
-	let command = commands.get(commandName) || commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-if (!command) return;
-try {command.execute(bot,message, args , prefix_num , prefixs);} catch (error) {console.error(error);}
-}
-
-if(message.content.split(" ")[0].toLowerCase() == prefix + "reload") {
-commandName = "reload"
-	let command = commands.get(commandName) || commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-if (!command) return;
-try {command.execute(bot,message, args , prefix_num , prefixs);} catch (error) {console.error(error);}
-}
 
 if (!message.content.startsWith(prefix + prefix_num)) return;
 if(message.content.split(" ")[0].toLowerCase() == prefix + prefix_num) {
